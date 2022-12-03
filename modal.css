@@ -1,0 +1,64 @@
+#modal-used-here .modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  font-size: 2rem;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#modal-used-here .modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#modal-used-here .modal-window > div {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#modal-used-here .modal-window header {
+  font-weight: bold;
+}
+
+#modal-used-here .modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+#modal-used-here .modal-close:hover {
+  color: black;
+}
+
+#modal-used-here .modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+#modal-used-here .logo {
+  max-width: 150px;
+  display: block;
+}
+/*# sourceMappingURL=modal.css.map */
