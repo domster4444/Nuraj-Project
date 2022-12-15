@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bike Auction</title>
+    <title>Registration Page</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -19,7 +19,7 @@
         <a href="#" class="logo" style="display: flex; align-items: center">
           <img height="45" src="./images/top logo.png" alt="" />
 
-          Bike Auction</a
+          Car Auction</a
         >
       </div>
 
@@ -43,22 +43,25 @@
     <!-- contact section starts  -->
 
     <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> us</h1>
+      <h1 class="heading"><span>Register</span> to proceed</h1>
 
       <form action="">
+        <a href="#" style="font-size: 4rem; margin-top: 1.4rem; color: #ee2b2e" class="fas fa-solid fa-lock"></a>
+        <h4 style="font-size: 2.8rem; margin: 1.4rem; color: #636363">Registration</h4>
         <div class="inputBox">
-          <input type="text" placeholder="name" />
-          <input type="email" placeholder="email" />
+          <input style="width: 100%" type="text" required placeholder="Enter your username" />
+        </div>
+        <div class="inputBox">
+          <input style="width: 100%" type="email" required placeholder="Enter your email" />
+        </div>
+        <div class="inputBox">
+          <input style="width: 100%" type="password" placeholder="Enter your password" />
+        </div>
+        <div class="inputBox">
+          <input style="width: 100%" type="password" placeholder="Confirm your password" />
         </div>
 
-        <div class="inputBox">
-          <input type="number" placeholder="number" />
-          <input type="text" placeholder="subject" />
-        </div>
-
-        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-
-        <input type="submit" value="send message" class="btn" />
+        <input type="submit" style="width: 100%" value="REGISTER" class="btn" />
       </form>
     </section>
 
